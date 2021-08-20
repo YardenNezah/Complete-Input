@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Input</title>
+    <link href="completeInput.css" rel="stylesheet">
+</head>
+<body>
+    <form>
+        <input type="text" class="city" id="city" name="city" placeholder="City or State" oninput="addInput()">
+        <br>
+        <select id="mySelect" size="8" onclick="choose(document.getElementsByTagName('option'))"> 
+            <option>Filter For A City</option>
+            <option>Or A State</option>
+        </select>
+    </form>
+</body>
+<script src="completeInput.js"></script>
+</html>
